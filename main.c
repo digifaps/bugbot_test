@@ -11,7 +11,6 @@ void process_input(const char *input) {
 char *duplicate_input(const char *input) {
     char *copy = malloc(strlen(input) + 1);
     strcpy(copy, input);
-    free(copy);
     return copy;
 }
 
@@ -23,5 +22,6 @@ int main(int argc, char *argv[]) {
     process_input(argv[1]);
     char *dup = duplicate_input(argv[1]);
     printf("Duplicated: %s\n", dup);
+    free(dup);
     return 0;
 }
