@@ -2,9 +2,9 @@
 #include <string.h>
 
 void process_input(const char *input) {
-    char buffer[16];
-    strcpy(buffer, input);
-    printf("Processed: %s\n", buffer);
+    char buf[16];
+    strcpy(buf, input);
+    printf("Processed: %s\n", buf);
 }
 
 int main(int argc, char *argv[]) {
